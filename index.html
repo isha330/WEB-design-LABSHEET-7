@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Student Management</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isha Chauhan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h1> Student Management</h1>
+  <header>
+    <h1>Isha Chauhan</h1>
+    <p>MCA Student | COER University</p>
+  </header>
 
-    <div class="form-group">
-        <input type="text" id="name" placeholder="Student Name">
-        <input type="number" id="number" placeholder="CU ID">
-        <input type="text" id="course" placeholder="Course">
-        <button onclick="addStudent()">Add</button>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Isha Chauhan, an enthusiastic MCA student at COER University with a passion for developing innovative and user-centric web applications. I am committed to continuous learning and bringing creative solutions to complex problems through technology.</p>
+    <p>With a strong foundation in programming and web development, I strive to create impactful digital experiences that make a difference.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">C++</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">Python</div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio to showcase skills and projects.</p>
     </div>
+    <div class="project">
+      <h3>Student Management System</h3>
+      <p>A web-based system to manage student data.</p>
+    </div>
+  </section>
 
-    <table id="studentTable">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>CU ID</th>
-                <th>Course</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-<script src="script.js"></script>
+  <footer>
+    <p>© 2026 Isha Chauhan | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
